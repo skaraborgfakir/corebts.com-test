@@ -17,3 +17,6 @@ dotnet add ./MyWebApp.DataStoreTest/MyWebApp.DataStoreTest.csproj reference ./My
 dotnet test ./MyWebApp.DataStoreTest/MyWebApp.DataStoreTest.csproj
 // kör webapp
 dotnet run --project ./MyWebApp.Client/MyWebApp.Client.csproj --urls http://127.0.0.1:5002/
+// publicera till apache
+dotnet publish ./MyWebApp.Client/MyWebApp.Client.csproj -o /var/www/www.fakirenstenstorp.st/stefan/tmp/corebts.com
+//  vilket inte fungerade direkt.
